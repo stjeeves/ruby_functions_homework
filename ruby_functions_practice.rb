@@ -46,3 +46,11 @@ end
 def volume(side)
   return side * side * side
 end
+
+def radius(radius1)
+  return 4.19 * (radius1 * radius1 * radius1)
+end
+
+def celsius(temp1)
+  return (temp1 - 32) * 0.5556
+end
