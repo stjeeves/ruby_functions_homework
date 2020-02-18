@@ -30,17 +30,42 @@ def add_string_as_number(num1, num2)
   return num1.to_i() + num2.to_i()
 end
 
-def number_to_full_month_name( month_number )
-  if month_number == "1"
+def number_to_full_month_name( month1 )
+  if month1 == 1
     return "January"
   end
 end
 
-def number_to_full_month_name(month_number)
-  if month_number == 3
+def number_to_full_month_name( month3 )
+  if month3 == 3
     return "March"
   end
 end
+
+def number_to_full_month_name( month9 )
+  if month9 == 9
+    return "September"
+  end
+end
+
+def number_to_short_month_name(short_month)
+  if short_month == 1
+    return "Jan"
+  end
+end
+
+def number_to_short_month_name(short_month)
+  if short_month == 4
+    return "Apr"
+  end
+end
+
+def number_to_short_month_name(short_month)
+  if short_month == 10
+    return "Oct"
+  end
+end
+
 
 
 def volume(side)
