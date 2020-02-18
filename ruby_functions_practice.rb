@@ -30,43 +30,30 @@ def add_string_as_number(num1, num2)
   return num1.to_i() + num2.to_i()
 end
 
-def number_to_full_month_name( month1 )
-  if month1 == 1
-    return "January"
-  end
+def number_to_full_month_name(month_number)
+
+months = {"January" => 1, "Febuary" => 2, "March" => 3,
+  "April" => 4, "May" => 5, "June" => 6, "July" => 7, "August" => 8,
+"September" => 9, "October" => 10, "November" => 11, "December" => 12}
+
+  months.each do| name, number|
+      if month_number == number
+        return name
+      end
+    end
 end
 
-def number_to_full_month_name( month3 )
-  if month3 == 3
-    return "March"
-  end
+def number_to_short_month_name(month_number)
+months = {"Jan" => 1, "Feb" => 2, "Mar" => 3,
+  "Apr" => 4, "May" => 5, "Jun" => 6, "Jul" => 7, "Aug" => 8,
+"Sep" => 9, "Oct" => 10, "Nov" => 11, "Dec" => 12}
+
+  months.each do |name, number|
+      if month_number == number
+      return name
+      end
+    end
 end
-
-def number_to_full_month_name( month9 )
-  if month9 == 9
-    return "September"
-  end
-end
-
-def number_to_short_month_name(short_month)
-  if short_month == 1
-    return "Jan"
-  end
-end
-
-def number_to_short_month_name(short_month)
-  if short_month == 4
-    return "Apr"
-  end
-end
-
-def number_to_short_month_name(short_month)
-  if short_month == 10
-    return "Oct"
-  end
-end
-
-
 
 def volume(side)
   return side * side * side
